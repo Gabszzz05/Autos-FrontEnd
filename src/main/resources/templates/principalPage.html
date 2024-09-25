@@ -15,7 +15,32 @@
         </div>
 
         <div class="mb-5">
-            <div class="row">
+                <table class="table table-borderless">
+                    <tbody>
+                    <tr>
+                        <td><strong>Marca:</strong></td>
+                        <td th:text="${carModel.marca}"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Modelo:</strong></td>
+                        <td th:text="${carModel.modelo}"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nro Asientos:</strong></td>
+                        <td th:text="${carModel.asientos}"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio:</strong></td>
+                        <td th:text="${carModel.precio}"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Color:</strong></td>
+                        <td th:text="${carModel.color}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!--
                 <div class="col-6">
                     <p><strong>Marca:</strong></p>
                     <p><strong>Modelo:</strong></p>
@@ -24,17 +49,19 @@
                     <p><strong>Color:</strong></p>
                 </div>
                 <div class="col-6">
-                    <p>Marca</p>
-                    <p>Modelo</p>
-                    <p>Nro Asientos</p>
-                    <p>Precio</p>
-                    <p>Color</p>
+                    <p th:text="${carModel.marca}"></p>
+                    <p th:text="${carModel.modelo}"></p>
+                    <p th:text="${carModel.asientos}"></p>
+                    <p th:text="${carModel.precio}"></p>
+                    <p th:text="${carModel.color}"></p>
                 </div>
-            </div>
+                -->
         </div>
 
         <div class="d-grid">
-            <button type="reset" class="btn btn-success btn-lg">Back</button>
+            <form th:action="@{/wheels/inicio}" method="get">
+                <button type="submit" class="btn btn-success btn-lg">Back</button>
+            </form>
         </div>
     </div>
 
