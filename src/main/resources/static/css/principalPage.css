@@ -1,0 +1,29 @@
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.col-6 {
+    width: 48%;
+}
+
+.d-grid {
+    width: 100%;
+}
+
+.d-grid button {
+    width: 100%;
+}
